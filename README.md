@@ -3,7 +3,8 @@
 
 ##Overview
 dockerでSubversionのdumpファイルをS3にバックアップするツール
-以下のプログラムのSVN版
+
+* 以下のプログラムのSVN版
 [mysql-backup-s3](https://github.com/schickling/dockerfiles/tree/master/mysql-backup-s3)
 
 * go-cronによる定期バックアップ対応
