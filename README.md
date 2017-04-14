@@ -1,8 +1,8 @@
-#svn-backup-s3
+#docker_svn_dump_s3
 ====
 
 ##Overview
-SubversionをS3にバックアップするツール
+dockerでSubversionのdumpファイルをS3にバックアップするツール
 以下のプログラムのSVN版
 [mysql-backup-s3](https://github.com/schickling/dockerfiles/tree/master/mysql-backup-s3)
 
