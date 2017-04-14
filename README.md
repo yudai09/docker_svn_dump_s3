@@ -12,7 +12,7 @@ dockerでSubversionのdumpファイルをS3にバックアップするツール
 
 ## Install
 ```sh
-$ git cloan https://github.com/yudai09/mysql-backup-s3.git
+$ git cloan https://github.com/yudai09/docker_svn_dump_s3.git
 $ docker build -f ./Dockerfile -t svn-backup-s3 .
 ```
 
