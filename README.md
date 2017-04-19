@@ -13,7 +13,15 @@ $ docker build -f ./Dockerfile -t svn-backup-s3 .
 ## Usage
 
 ```sh
-$ docker run -v /host:/container -e BACKUP_DIR=/container -e S3_ACCESS_KEY_ID=key -e S3_SECRET_ACCESS_KEY=secret -e S3_BUCKET=my-bucket -e S3_PREFIX=backup -e S3_ENDPOINT=cloud-endpoint svn-backup-s3
+$ docker run \
+  -v /path/to/host/svn:/path/to/container/svn \
+  -e BACKUP_DIR=/path/to/container/svn/repo \
+  -e S3_ACCESS_KEY_ID=key \
+  -e S3_SECRET_ACCESS_KEY=secret \
+  -e S3_BUCKET=my-bucket \
+  -e S3_PREFIX=backup \
+  -e S3_ENDPOINT=cloud-endpoint \
+  svn-backup-s3
 ```
 
 ## Environment variables
